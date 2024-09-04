@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+    padding:0px;
+}
+html {
+    height: 100%;
+}
+body.tictactoe {
+    position: relative;
+}
+body.tictactoe:after{
+    background: url('tictactoe.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    content: '';
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 239px;
+    height: 263px;
+}
+h1 {
+    text-align: center;
+}
+#tic_tac_game {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 23px;
+    background: rgba(0,0,0,0.3);
+    padding: 35px;
+    border-radius: 33px;
+    width: 350px;
+}
+.box {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #d5d5d5;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d5d5d5;
+    border-radius: 12px;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.box:hover {
+    background-color: #FFFFE0;
+}
+
+#restartBtn {
+    display: block;
+    margin: 10px auto 0px;
+}
+
+h2 {
+    width: 100%;
+    max-width: 350px;
+    margin: 0px auto;
+    background: #E2BE00;
+    border-radius: 12px;
+    padding: 6px;
+    color: #000;
+}
+.xclass,.X {
+    color: #e43d30;
+    font-weight: 600;
+}
+.oclass,.O {
+    color: #171717;
+    font-weight: 600;
+}
+h2.gameover {
+    background: green;
+    color: #fff;
+}
+body.gamewin h2 {
+    background: green;
+    color: #fff;
+}
+body.gametie h2 {
+    background: red;
+    color: #fff;
+}
+body.gamewin #tic_tac_game {
+    background: green;
+}
+body.gametie #tic_tac_game {
+    background: red;
+}
+body.tictactoe h2 {
+    margin: 10px auto 0px;
+}

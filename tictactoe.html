@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="tictactoe/styles.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body class="tictactoe">
+    <header>
+        <div class="logo d-flex j-center">
+            <a href="index.html">
+                <img src="images/logo-new.png" alt="game"/>
+            </a>
+        </div>
+    </header>
+    <main class="">
+        <div id="tic_tac_game" class="">
+            <button class="box" id="box0"></button>
+            <button class="box" id="box1"></button>
+            <button class="box" id="box2"></button>
+            <button class="box" id="box3"></button>
+            <button class="box" id="box4"></button>
+            <button class="box" id="box5"></button>
+            <button class="box" id="box6"></button>
+            <button class="box" id="box7"></button>
+            <button class="box" id="box8"></button>
+        </div>  
+        <div id="end_game">
+            <input type="button" class="common-btn" value="Restart" id="restartBtn" 
+            onclick="restart_btn()"/>
+        </div>
+    </main>
+    <footer class="d-flex j-center"> 
+        <p>Copyright ©2024 Games</p>
+    </footer>   
+    <script src="tictactoe/custom.js"></script>   
+</body>
+</html>

@@ -1,0 +1,102 @@
+body.snake {
+    overflow: hidden;
+}
+.wrapper{
+    width: 65vmin;
+    height: 70vmin;
+    border-radius: 5px;
+    background: #e43d30;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.30);
+}
+
+.game-details{
+    color: #e9ebf7;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-board{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+    background: #d7d8dd;
+}
+
+.play-board .food{
+    background: #ff0505;
+    border-radius: 8px;
+}
+
+.play-board .head{
+    background: #030a2e;
+    border-radius: 2px;
+}
+
+/* .controls{
+    display: flex ;
+    justify-content: space-between;
+}
+
+.controls i{
+    color: #ffffff;
+    padding: 25px 0;
+    width: calc(100% / 4);
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-right: 1px solid #ff054c;
+} */
+
+
+.game-over-modal {
+    width: 30%;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.modal-content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.modal-content button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #e43d30;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #000;
+}
+
+
+
+

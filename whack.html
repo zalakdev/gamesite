@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="whack/style.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body class="whack">
+    <header>
+        <div class="logo d-flex j-center">
+            <a href="index.html">
+                <img src="images/logo-new.png" alt="game"/>
+            </a>
+        </div>
+    </header>
+    <main>        
+        <div class="score-section">
+            <div class="start">
+                <button id="play-button" onclick="startGame()" class="common-btn">Start</button>
+                <button id="play-again-button" onclick="startGame()" style="display: none;" class="common-btn">Restart</button>
+            </div>
+            <h2 class="timer">Time: 60s</h2> <!-- Timer added here -->
+            <h2 class="score">Score: 0</h2>
+            <div class="highscore">Highscore: 0</div>
+        </div>
+        
+        
+        
+           
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h2>Congratulations!</h2>
+                <p id="final-score">Your score is: 0</p>
+                <button onclick="closePopup()" class="common-btn">Close</button>
+            </div>
+        </div>
+        
+        <div class="game">
+            <div class="hole hole1">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole2">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole3">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole4">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole5">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole6">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole7">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole8">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole9">
+                <div class="mole"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="d-flex j-center"> 
+        <p>Copyright ©2024 Games</p>
+    </footer>   
+    <script src="whack/javascript.js"></script>   
+</body>
+</html>
